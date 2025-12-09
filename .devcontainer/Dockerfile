@@ -6,6 +6,9 @@ COPY --from=docker.io/golang:1.25.5-alpine@sha256:26111811bc967321e7b6f852e914d1
 # Install additional packages
 RUN apk update && apk add sudo openssh curl git bash fish micro graphviz step-cli step-certificates nodejs npm cosign
 
+# Install starship
+RUN cd /tmp && curl -sS https://starship.rs/install.sh | sh -s -- -y || exit -1
+
 # Install dart-sass
 RUN cd /tmp \
     && curl -L -O https://github.com/sass/dart-sass/releases/download/1.95.0/dart-sass-1.95.0-linux-x64-musl.tar.gz \
@@ -14,9 +17,6 @@ RUN cd /tmp \
 
 # Install Hugo
 RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
-
-# Install starship
-RUN cd /tmp && curl -sS https://starship.rs/install.sh | sh -s -- -y || exit -1
 
 # Add non-root user
 ARG USER_NAME=vscode
@@ -32,9 +32,14 @@ RUN addgroup --gid $USER_GID $USER_NAME \
 
 USER $USER_NAME
 
+# Install bun
+RUN curl -fsSL https://bun.com/install | bash
+
 # Set up fish shell.
 RUN <<EOF
     mkdir -p ~/.config/fish
+    echo 'set --export BUN_INSTALL "$HOME/.bun"' >> ~/.config/fish/config.fish
+    echo 'set --export PATH $BUN_INSTALL/bin $PATH' >> ~/.config/fish/config.fish
     echo 'set --export PATH "$HOME/go/bin" /go/bin /usr/local/go/bin $PATH' >> ~/.config/fish/config.fish
 EOF
 

@@ -1,0 +1,56 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "[Hugo] Start server...",
+      "command": "hugo server",
+      "type": "shell",
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/site"
+      }
+    },
+    {
+      "label": "[Hugo] Start server (drafts included)...",
+      "command": "hugo server --buildDrafts --logLevel=debug",
+      "type": "shell",
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/site"
+      }
+    },
+    {
+      "label": "[Hugo] Create deployment...",
+      "command": "rm -fr public && hugo --gc --minify",
+      "type": "shell",
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/site"
+      }
+    },
+    {
+      "label": "[Hugo] Mod Tidy",
+      "command": "hugo mod tidy",
+      "type": "shell",
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/site"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "file",
+      "description": "name of the file or directory  (e.g. somedir/foo.md)"
+    }
+    // {
+    //   "id": "site",
+    //   "type": "pickString",
+    //   "description": "site to manipulate",
+    //   "options": [
+    //     "hugo-bootstrap"
+    //   ]
+    // }
+  ]
+}

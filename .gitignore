@@ -1,1 +1,6 @@
-.env
+# Environment files.
+.devcontainer/.env
+
+# Node modules.
+node_modules/
+

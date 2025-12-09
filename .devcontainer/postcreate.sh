@@ -11,6 +11,10 @@ echo 'eval "$(starship init bash)"' >>~/.bashrc
 
 cd /workspace
 
+# Update go modules.
 go mod tidy
+
+# Update node modules.
+bun update
 
 exit 0
