@@ -1,6 +1,12 @@
 {
   "editor.formatOnSave": true,
-  "conventionalCommits.scopes": ["devcontainer"],
+  "conventionalCommits.scopes": [
+    "devcontainer",
+    "theme",
+    "metadata",
+    "layout",
+    "content"
+  ],
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
