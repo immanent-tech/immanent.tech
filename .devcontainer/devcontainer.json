@@ -1,0 +1,28 @@
+{
+  "name": "Immanent Tech Site",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "postCreateCommand": "bash .devcontainer/postcreate.sh",
+  "containerUser": "vscode",
+  "containerEnv": {
+    "HOME": "/home/vscode"
+  },
+  "remoteEnv": {
+    "PODMAN_COMPOSE_WARNING_LOGS": "false",
+    "TZ": "${localEnv:TZ:Australia/Brisbane}"
+  },
+  "updateRemoteUserUID": true,
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vivaxy.vscode-conventional-commits",
+        "golang.go",
+        "ymotongpoo.licenser",
+        "esbenp.prettier-vscode",
+        "budparr.language-hugo-vscode"
+      ]
+    }
+  }
+}
