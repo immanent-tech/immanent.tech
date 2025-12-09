@@ -7,7 +7,7 @@
       "type": "shell",
       "problemMatcher": [],
       "options": {
-        "cwd": "${workspaceFolder}/site"
+        "cwd": "${workspaceFolder}/immanent-tech"
       }
     },
     {
@@ -16,7 +16,7 @@
       "type": "shell",
       "problemMatcher": [],
       "options": {
-        "cwd": "${workspaceFolder}/site"
+        "cwd": "${workspaceFolder}/immanent-tech"
       }
     },
     {
@@ -25,7 +25,7 @@
       "type": "shell",
       "problemMatcher": [],
       "options": {
-        "cwd": "${workspaceFolder}/site"
+        "cwd": "${workspaceFolder}/immanent-tech"
       }
     },
     {
@@ -34,7 +34,7 @@
       "type": "shell",
       "problemMatcher": [],
       "options": {
-        "cwd": "${workspaceFolder}/site"
+        "cwd": "${workspaceFolder}/immanent-tech"
       }
     }
   ],

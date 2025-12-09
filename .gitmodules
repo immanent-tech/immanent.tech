@@ -1,0 +1,4 @@
+[submodule "immanent-tech/themes/blowfish"]
+	path = immanent-tech/themes/blowfish
+	url = https://github.com/nunocoracao/blowfish.git
+	branch = main
