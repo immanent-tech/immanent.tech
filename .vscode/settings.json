@@ -1,6 +1,34 @@
 {
+  "editor.formatOnSave": true,
   "conventionalCommits.scopes": ["devcontainer"],
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
-  }
+  },
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.scrollback": 10000,
+  "licenser.author": "Immanent Tech <hello@immanent.tech>",
+  "licenser.license": "AGPLv3",
+  "licenser.useSPDXLicenseFormat": true,
+  "languageToolLinter.external.url": "http://languagetool:8010",
+  "languageToolLinter.languageTool.language": "auto",
+  "languageToolLinter.languageTool.level": "picky"
 }

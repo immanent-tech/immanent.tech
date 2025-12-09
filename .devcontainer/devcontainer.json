@@ -21,7 +21,11 @@
         "golang.go",
         "ymotongpoo.licenser",
         "esbenp.prettier-vscode",
-        "budparr.language-hugo-vscode"
+        "budparr.language-hugo-vscode",
+        "yzhang.markdown-all-in-one",
+        "davidlday.languagetool-linter",
+        "dnut.rewrap-revived",
+        "tamasfe.even-better-toml"
       ]
     }
   }
