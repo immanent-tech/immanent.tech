@@ -20,13 +20,12 @@ defaults:
     shell: bash
 
 env:
+  HUGO_VERSION: 0.152.2
   SITEDIR: immanent-tech
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.128.0
     steps:
       - name: Install Hugo CLI
         run: |
