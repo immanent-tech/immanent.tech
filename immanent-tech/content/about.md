@@ -13,6 +13,6 @@ rather than add to the purpose their created for.
 
 We specialise in using the “GoTH” stack (Go, Templ, HTMX) to build web-based solutions.
 
-Checkout our [projects](/projects).
+Checkout our [work](/work).
 
 [Email us](mailto:hello@immanent.tech).

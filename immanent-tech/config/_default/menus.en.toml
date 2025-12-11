@@ -22,8 +22,8 @@ pageRef = "about"
 weight = 10
 
 [[main]]
-name = "Projects"
-pageRef = "projects"
+name = "Work"
+pageRef = "work"
 weight = 20
 
 [[main]]

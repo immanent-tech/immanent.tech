@@ -7,15 +7,11 @@ showTableOfContents: false
 showPagination: false
 ---
 
-# Projects
+# Work
 
-## Sites/Services
+## Apps
 
-- [Foragd](https://foragd.app): An elegant and modern cloud-based feed reader. Technologies used:
-  - Go
-  - HTMX
-  - Templ
-  - Elasticsearch
+- [Foragd](https://foragd.app): An elegant and modern cloud-based feed reader.
 
 ## Open Source
 
