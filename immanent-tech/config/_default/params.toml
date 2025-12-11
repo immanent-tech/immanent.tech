@@ -50,8 +50,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
+  layout = "hero" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "img/main-logo.webp" # used in: hero, and card
   showRecent = false
   showRecentItems = 5
   showMoreLink = false
@@ -148,8 +148,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # domain = "llama.yoursite.com"
 
 [umamiAnalytics]
-  # websiteid = "ABC12345"
-  # domain = "llama.yoursite.com"
+  websiteid = "e420d8f8-506f-4703-b00c-2a70b87b26ea"
+  domain = "immanent.tech"
   # dataDomains = "yoursite.com,yoursite2.com"
   # scriptName = ""
   # enableTrackEvent = true
